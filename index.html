@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="container" class="container">
+    <img class="icon-star" src="/images/icon-star.svg">
+    <h2>How did we do?</h2>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      <div class="rating">
+        <button value="1" id="btnrating" class="btn-rating">1</button>
+        <button value="2" id="btnrating" class="btn-rating">2</button>
+        <button value="3" id="btnrating" class="btn-rating">3</button>
+        <button value="4" id="btnrating" class="btn-rating">4</button>
+        <button value="5" id="btnrating" class="btn-rating">5</button>
+      </div>
+
+    <div class="btn-container">
+      <button id="btnsubmit" class="btn-submit">Submit</button>
+    </div>
+  </div>
+
+
+  <div  id="container1"  class="close">
+    <img src="/images/illustration-thank-you.svg">
+    <p id="selectedrating" class="selected-rating"></p>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
+
+
+  
+
+  
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>

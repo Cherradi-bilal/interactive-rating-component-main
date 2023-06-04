@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+
+/*Font size*/
+--paragraph : 15px;
+font-family: 'Overpass', sans-serif;
+}
+
+body{
+    height: 98vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryDarkBlue)
+    
+}
+.container{
+    background-image: linear-gradient(var(--DarkBlue),black);
+    padding: 40px;
+    margin: auto 20% auto 20%;
+    border-radius: 30px;
+    
+}
+
+.icon-star{
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+border-radius: 40px;
+background-color: var(--DarkBlue);
+}
+
+h2{
+    color: var(--White);
+}
+
+p {
+    color: var(--LightGrey);
+}
+
+.rating {
+    display: inline-flex;
+}
+
+.btn-rating{
+    height: 37px;
+    padding: 15px;
+    margin-right: 20px;
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.btn-rating:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+.btn-rating:focus{
+    background-color: var(--Orange);
+}
+
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-submit{
+    margin-top: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    
+}
+.btn-submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/* contianer tank you */
+.container1{
+    background-image: linear-gradient(var(--DarkBlue),black);
+    padding: 40px;
+    margin: auto 20% auto 20%;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+.selected-rating{
+    border-radius: 20px;
+    background-color: var(--DarkBlue);
+    padding: 10px 0px 10px 0px;
+    margin: 20px 20px 0px 20px;
+    color: var(--Orange);
+}
+
+.close{
+    display: none;
+}
+
+
+  @media (min-width: 350px ) {
+    .container1 {
+        background-image: linear-gradient(var(--DarkBlue),black);
+        padding: 40px;
+        margin: auto 5% auto 5%;
+        border-radius: 30px;
+        text-align: center;
+    }
+    .container {
+        background-image: linear-gradient(var(--DarkBlue),black);
+        padding: 40px;
+        margin: auto 5% auto 5%;
+        border-radius: 30px;
+    }
+  };
+  
